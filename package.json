@@ -1,0 +1,8 @@
+{
+  "name": "entrepreneur-quotes",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.0.0",
+    "jsonfile": "^2.2.3"
+  }
+}
