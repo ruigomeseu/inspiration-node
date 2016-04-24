@@ -3,7 +3,8 @@ var jsonfile = require('jsonfile')
 var util     = require('util')
 var app      = express();
 
-var port = process.env.PORT || 8080;
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 var router = express.Router();
 
@@ -24,5 +25,5 @@ router.get('/quotes', function(req, res) {
 app.use('/', router);
 
 // START THE SERVER
-app.listen(port);
+app.listen(port, ip_address);
 console.log('Magic happens on port ' + port);

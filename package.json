@@ -4,5 +4,8 @@
   "dependencies": {
     "express": "^4.0.0",
     "jsonfile": "^2.2.3"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
